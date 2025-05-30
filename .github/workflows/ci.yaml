@@ -21,6 +21,7 @@ jobs:
       - name: Install uv
         run: | 
             pipx install uv
+            uv venv
             uv pip install -U pytest
             uv pip install -U pytest-cov
 
