@@ -21,7 +21,8 @@ jobs:
       - name: Install uv
         run: | 
             pipx install uv
-            uv pip sync -d
+            uv pip install -U pytest
+            uv pip install -U pytest-cov
 
       - name: Sync dev-deps & run pytest
         run: |
