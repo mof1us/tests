@@ -1,0 +1,7 @@
+pyproject.toml
+src/mypkg/funcs.py
+src/mypkg.egg-info/PKG-INFO
+src/mypkg.egg-info/SOURCES.txt
+src/mypkg.egg-info/dependency_links.txt
+src/mypkg.egg-info/top_level.txt
+tests/test_of_funcs.py
