@@ -1,7 +1,12 @@
 name: CI проверка тестов
-on: push: branches: [master]
-pull_request: branches: [master]
-jobs: test:
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+    test:
         runs-on: ubuntu-latest
         steps:
           - name: Проверка кода
