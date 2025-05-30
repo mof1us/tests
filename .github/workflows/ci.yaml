@@ -23,4 +23,4 @@ jobs:
 
       - name: Sync dev-deps & run pytest
         run: |
-          uv run pytest -v
+          uv run pytest -v --cov=mypkg --cov-report=term
