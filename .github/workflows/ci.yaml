@@ -19,7 +19,9 @@ jobs:
           python-version: "3.13"
 
       - name: Install uv
-        run: pipx install uv
+        run: | 
+            pipx install uv
+            uv pip sync -d
 
       - name: Sync dev-deps & run pytest
         run: |
