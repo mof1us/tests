@@ -28,3 +28,10 @@ jobs:
       - name: Sync dev-deps & run pytest
         run: |
           uv run pytest -v --cov=mypkg --cov-report=term
+
+      - name: Send Telegram Notification
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.CHAT_ID }}
+          token: ${{ secrets.TOKEN }}
+          message: "Тесты завершены! Проверьте результаты: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
