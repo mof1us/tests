@@ -1,4 +1,1 @@
-![example workflow](https://github.com/github/docs/actions/workflows/ci.yml/badge.svg)
-
-
-ЛЯЛЯЛЯЛЯ Я СЕМЁН ЛОБАНОВ
+[![CI проверка тестов](https://github.com/mof1us/tests/actions/workflows/ci.yaml/badge.svg)](https://github.com/mof1us/tests/actions/workflows/ci.yaml)
